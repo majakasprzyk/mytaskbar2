@@ -1,6 +1,6 @@
 <img width="250px" alt="Logo" src="./src/assets/readmePhotos/logo.jpg" />
 
-[My Task Bar](public/index.html)
+[My Task Bar](https://infoshareacademy.github.io/jfdzr2-nuclear-penguins/#/)
 
 - Help with the organization of time and daily tasks
 - Multitasking - use boards for home stuff or work tasks
