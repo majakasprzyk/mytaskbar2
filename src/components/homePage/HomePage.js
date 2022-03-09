@@ -1,6 +1,6 @@
 import '../homePage/homepage.css';
 import {NavLink} from 'react-router-dom';
-import {Logo} from '../../logo/Logo';
+import {Logo} from '../logo/Logo';
 
 export const HomePage = () => {
   return (

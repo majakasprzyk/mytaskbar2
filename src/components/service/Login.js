@@ -4,7 +4,7 @@ import {NavLink, Redirect, withRouter} from 'react-router-dom';
 import React, {useCallback, useContext} from 'react';
 import app from './Firebase';
 import {AuthContext} from './Auth';
-import {Logo} from '../../logo/Logo';
+import {Logo} from '../logo/Logo';
 // import iconEmail from '../../assets/iconEmail.png';
 
 export const Login = ({history}) => {
@@ -31,7 +31,14 @@ export const Login = ({history}) => {
 
   return (
     <main>
-      <Logo />
+      <nav className="navigation_homepage">
+        <Logo />
+        <ul className="menu-nav">
+          <NavLink className="link-register" to={'/signup'}>
+            Zarejestruj się
+          </NavLink>
+        </ul>
+      </nav>
 
       <div className="main-container box">
         <div className="log-in-form">
