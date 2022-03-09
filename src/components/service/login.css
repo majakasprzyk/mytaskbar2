@@ -1,0 +1,27 @@
+input.submit {
+  height: 40px;
+  text-align: center;
+  padding-bottom: 0px;
+  background-color: white;
+  color: #bba598;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+input.submit:hover {
+  background-color: white;
+  color: white;
+  border: 1px solid #bba598;
+  cursor: pointer;
+}
+
+input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 20px;
+  font-size: 15px;
+  width: 100%;
+  padding-bottom: 20px;
+}
