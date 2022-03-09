@@ -1,4 +1,5 @@
 import React from 'react';
+import './shared.css';
 import {Login} from './components/service/Login';
 
 import {HomePage} from './components/homePage/HomePage';

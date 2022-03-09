@@ -48,18 +48,6 @@ div.cover--square--vertical {
   left: 102%;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  color: #331e16;
-}
-
-body {
-  background-color: #b8a090;
-  font-family: 'Lato', sans-serif;
-}
-
 h1.logo {
   padding: 8px;
   font-family: 'Lobster';
