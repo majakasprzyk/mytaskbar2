@@ -1,6 +1,7 @@
 import app from './Firebase';
 import {useCallback} from 'react';
-import {NavLink} from 'react-router-dom';
+// import {NavLink} from 'react-router-dom';
+import './login.css';
 
 export const Form = ({history}) => {
   const handleLogin = useCallback(
@@ -21,27 +22,15 @@ export const Form = ({history}) => {
 
   return (
     <>
-      <div className="log-in-form">
-        <div className="login-panel">
+      <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+        <div style={{display: 'block', padding: '10px', margin: '0'}}>
           <form onSubmit={handleLogin} action="#">
-            <p>
-              <label htmlFor="email"></label>
-              <input
-                type="email"
-                placeholder="Enter email"
-                name="email"
-                className="input-design"
-              />
-            </p>
-            <p>
-              <label htmlFor="password"></label>
-              <input
-                type="password"
-                placeholder="Enter password"
-                name="password"
-                className="input-design"
-              />
-            </p>
+            <label htmlFor="email">Adres email</label>
+            <input type="email" name="email" className="input-design" />
+
+            <label htmlFor="password">Hasło</label>
+            <input type="password" name="password" className="input-design" />
+
             <input
               type="submit"
               name="submit"
@@ -49,14 +38,15 @@ export const Form = ({history}) => {
               className="submit"
             />
           </form>
-          <div className="flex-div">
+
+          {/* <div className="flex-div">
             <div className="sign-up">
               <p id="sign-up-option">
                 Don't have an account?
-                <NavLink to={'/signup'}>Sign up</NavLink>
+                <NavLink to={'/signup'}> Sign up</NavLink>
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </>
