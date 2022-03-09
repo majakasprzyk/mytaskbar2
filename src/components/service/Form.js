@@ -1,6 +1,8 @@
 import app from './Firebase';
 import {useCallback} from 'react';
-// import {NavLink} from 'react-router-dom';
+import {AuthContext} from './Auth';
+import {Redirect} from 'react-router-dom';
+import {useContext} from 'react';
 import './login.css';
 
 export const Form = ({history}) => {
@@ -19,16 +21,25 @@ export const Form = ({history}) => {
     },
     [history]
   );
+  const currentUser = useContext(AuthContext);
+
+  if (currentUser) {
+    return <Redirect to="/bartable" />;
+  }
 
   return (
     <>
       <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
         <div style={{display: 'block', padding: '10px', margin: '0'}}>
           <form onSubmit={handleLogin} action="#">
-            <label htmlFor="email">Adres email</label>
+            <label style={{fontWeight: '900'}} htmlFor="email">
+              Adres email
+            </label>
             <input type="email" name="email" className="input-design" />
 
-            <label htmlFor="password">Hasło</label>
+            <label style={{fontWeight: '900'}} htmlFor="password">
+              Hasło
+            </label>
             <input type="password" name="password" className="input-design" />
 
             <input

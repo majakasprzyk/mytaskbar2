@@ -33,14 +33,12 @@ select {
   height: 40px;
   font-size: large;
   margin-bottom: 15px;
-  border-radius: 9px;
 }
 .submit {
   background-color: #584133;
   color: #f3edea;
   margin-left: 10px;
   border-style: none;
-  border-radius: 6px;
   width: 120px;
   height: 40px;
   border: 2px #f3edea solid;
