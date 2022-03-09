@@ -5,7 +5,7 @@ import {HomePage} from './components/homePage/HomePage';
 import {HashRouter as Router, Switch, Route} from 'react-router-dom';
 import Signup from './components/service/Signup';
 import Boards from './components/boards/Boards';
-import Footer from './components/footer/Footer';
+// import Footer from './components/footer/Footer';
 import {TableAdder} from './components/tables/TableAdder';
 
 function App() {
@@ -18,13 +18,13 @@ function App() {
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/bartable" component={Boards} />
           <Route exact path="/bartable/tableAdder" component={TableAdder} />
-          <Route exact path="/footer" component={Footer} />
+          {/* <Route exact path="/footer" component={Footer} /> */}
         </Switch>
         <Switch>
           <Route path="/bartable"></Route>
-          <Route>
+          {/* <Route>
             <Footer />
-          </Route>
+          </Route> */}
         </Switch>
       </Router>
     </>

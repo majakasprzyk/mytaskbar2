@@ -56,7 +56,7 @@ div.cover--square--vertical {
 }
 
 body {
-  background-color: #584133;
+  background-color: #b8a090;
   font-family: 'Lato', sans-serif;
 }
 
@@ -68,7 +68,7 @@ h1.logo {
 }
 
 nav.navigation_homepage {
-  background-color: #f3edea;
+  background-color: white;
   display: flex;
   justify-content: space-between;
   padding: 15px;
@@ -103,12 +103,12 @@ li {
 
 h2.title {
   padding: 10px;
-  color: #f3f2ed;
+  color: #331e16;
   font-size: 35px;
 }
 
 .title-2 {
-  color: #f3f2ed;
+  color: #331e16;
   font-family: Lobster;
 }
 
@@ -131,6 +131,7 @@ div.introduction {
 .link-register,
 .link-nav {
   text-decoration: none;
+  font-weight: 900;
 }
 div.square-container {
   display: flex;
@@ -148,20 +149,14 @@ div.square-container {
 .home--div--square {
   color: #331e16;
   font-size: 22px;
-  background-color: #f3edea;
+  background-color: white;
   border: 5px solid;
-  border-radius: 6%;
   border-color: #d9c2b3;
   padding: 21px;
   width: 268px;
   margin-left: 28px;
   text-align: center;
   padding: 2.5%;
-}
-
-.home--last--square {
-  transform: rotate(15deg);
-  margin-top: 18px;
 }
 
 .footer_space--homepage {
@@ -177,36 +172,6 @@ div.square-container {
     top: 105%;
     left: 82%;
     width: 20%;
-  }
-
-  div.cover--square--vertical {
-    left: 102%;
-    height: 61.5%;
-    width: 4%;
-  }
-
-  .circle_1_init {
-    position: absolute;
-    top: 90%;
-    left: 83.5%;
-    height: 20%;
-    width: 10%;
-  }
-
-  .circle_2_init {
-    position: absolute;
-    top: 75%;
-    left: 89%;
-    height: 31%;
-    width: 15%;
-  }
-
-  .circle_3_init {
-    position: absolute;
-    top: 63%;
-    left: 96%;
-    height: 20%;
-    width: 9%;
   }
 
   div.home--square--row {
@@ -249,11 +214,6 @@ div.square-container {
 
   div.introduction {
     font-size: 18px;
-  }
-
-  .home--last--square {
-    margin: 40px 0 140px 0;
-    transform: rotate(10deg);
   }
 
   .home--div--square {
