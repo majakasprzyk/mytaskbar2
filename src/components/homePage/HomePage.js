@@ -1,11 +1,12 @@
 import '../homePage/homepage.css';
 import {NavLink} from 'react-router-dom';
+import {Logo} from '../../logo/Logo';
 
 export const HomePage = () => {
   return (
     <div>
       <nav className="navigation_homepage">
-        <h1 className="logo">My Task Bar</h1>
+        <Logo />
         <ul className="menu-nav">
           <NavLink className="link-nav" to={'/login'}>
             Zaloguj

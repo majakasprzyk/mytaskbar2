@@ -1,8 +1,10 @@
-import '../service/loginAndRegister.css';
+// import '../service/loginAndRegister.css';
+import './login.css';
 import {NavLink, Redirect, withRouter} from 'react-router-dom';
 import React, {useCallback, useContext} from 'react';
 import app from './Firebase';
 import {AuthContext} from './Auth';
+import {Logo} from '../../logo/Logo';
 // import iconEmail from '../../assets/iconEmail.png';
 
 export const Login = ({history}) => {
@@ -29,9 +31,9 @@ export const Login = ({history}) => {
 
   return (
     <main>
-      <article className="main-container box">
-        <div className="app-name-mobile">My Task Bar</div>
-        <div className="app-name">My Task Bar</div>
+      <Logo />
+
+      <div className="main-container box">
         <div className="log-in-form">
           <div className="login-panel">
             <form onSubmit={handleLogin} action="#">
@@ -56,8 +58,8 @@ export const Login = ({history}) => {
               <input
                 type="submit"
                 name="submit"
-                value="Log In"
-                className="login-button"
+                value="Zaloguj"
+                className="submit"
               />
             </form>
             <div className="flex-div">
@@ -70,7 +72,7 @@ export const Login = ({history}) => {
             </div>
           </div>
         </div>
-      </article>
+      </div>
     </main>
   );
 };

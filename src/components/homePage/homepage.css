@@ -48,13 +48,6 @@ div.cover--square--vertical {
   left: 102%;
 }
 
-h1.logo {
-  padding: 8px;
-  font-family: 'Lobster';
-  transform: rotate(-3deg);
-  font-size: 30px;
-}
-
 nav.navigation_homepage {
   background-color: white;
   display: flex;
