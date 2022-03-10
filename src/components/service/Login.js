@@ -44,7 +44,7 @@ export const Login = ({history}) => {
       <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
         <div style={{display: 'block', padding: '10px', margin: '0'}}>
           <form onSubmit={handleLogin} action="#">
-            <h1 style={{padding: '15px'}}>Logowanie</h1>
+            <h1>Logowanie</h1>
             <label style={{fontWeight: '900'}} htmlFor="email">
               Adres email
             </label>

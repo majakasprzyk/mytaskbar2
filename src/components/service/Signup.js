@@ -1,8 +1,8 @@
-// import './loginAndRegister.css';
 import {NavLink, withRouter} from 'react-router-dom';
 import React, {useCallback} from 'react';
 import app from './Firebase';
-// import iconEmail from '../../assets/iconEmail.png';
+import {Logo} from '../logo/Logo';
+import './login.css';
 
 function Signup({history}) {
   const handleSignUp = useCallback(
@@ -22,50 +22,39 @@ function Signup({history}) {
   );
 
   return (
-    <main>
-      <article className="main-container box">
-        <div className="app-name-mobile">My Task Bar</div>
-        <div className="app-name">My Task Bar</div>
-        <div className="log-in-form">
-          <div className="login-panel">
-            <form onSubmit={handleSignUp} action="#">
-              <p>
-                <label htmlFor="email"></label>
-                <input
-                  type="email"
-                  placeholder="Enter email"
-                  name="email"
-                  className="input-design"
-                />
-              </p>
-              <p>
-                <label htmlFor="password"></label>
-                <input
-                  type="password"
-                  placeholder="Enter password"
-                  name="password"
-                  className="input-design"
-                />
-              </p>
-              <input
-                type="submit"
-                name="submit"
-                value="Sign Up"
-                className="login-button"
-              />
-            </form>
-            <div className="flex-div">
-              <div className="sign-up">
-                <p id="sign-up-option">
-                  Already have an account?
-                  <NavLink to={'/login'}> Log in</NavLink>
-                </p>
-              </div>
-            </div>
-          </div>
+    <>
+      <nav className="navigation_homepage">
+        <Logo />
+        <ul className="menu-nav">
+          <NavLink className="link-register" to={'/login'}>
+            Zaloguj się
+          </NavLink>
+        </ul>
+      </nav>
+      <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
+        <div style={{display: 'block', padding: '10px', margin: '0'}}>
+          <form onSubmit={handleSignUp} action="#">
+            <h1>Rejestracja</h1>
+            <label style={{fontWeight: '900'}} htmlFor="email">
+              Adres email
+            </label>
+            <input type="email" name="email" className="input-design" />
+
+            <label style={{fontWeight: '900'}} htmlFor="password">
+              Hasło
+            </label>
+            <input type="password" name="password" className="input-design" />
+
+            <input
+              type="submit"
+              name="submit"
+              value="Zarejestruj"
+              className="submit"
+            />
+          </form>
         </div>
-      </article>
-    </main>
+      </div>
+    </>
   );
 }
 

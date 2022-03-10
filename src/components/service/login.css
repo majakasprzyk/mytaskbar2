@@ -19,6 +19,7 @@ form {
 
 input.submit {
   height: 40px;
+  width: 160px;
   text-align: center;
   padding-bottom: 0px;
   background-color: white;
@@ -37,4 +38,8 @@ input.submit:hover {
 
 label {
   color: #331e16;
+}
+
+h1 {
+  padding-bottom: 10px;
 }
