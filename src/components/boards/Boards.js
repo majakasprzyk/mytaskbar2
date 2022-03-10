@@ -55,28 +55,30 @@ export const Boards = () => {
     });
   };
 
-  const updateTask = (toList) => ({task, onList}) => {
-    console.log(task, onList, toList);
+  const updateTask =
+    (toList) =>
+    ({task, onList}) => {
+      console.log(task, onList, toList);
 
-    setColumns((old) => {
-      const from = old[onList].filter((item) => item.id !== task.id);
-      const to = old[toList].concat(task);
+      setColumns((old) => {
+        const from = old[onList].filter((item) => item.id !== task.id);
+        const to = old[toList].concat(task);
 
-      if (onList === toList) {
+        if (onList === toList) {
+          return {
+            ...old,
+            [toList]: old[toList]
+              .filter((item) => item.id !== task.id)
+              .concat(task),
+          };
+        }
         return {
           ...old,
-          [toList]: old[toList]
-            .filter((item) => item.id !== task.id)
-            .concat(task),
+          [onList]: from,
+          [toList]: to,
         };
-      }
-      return {
-        ...old,
-        [onList]: from,
-        [toList]: to,
-      };
-    });
-  };
+      });
+    };
   return (
     <>
       <Navigation />
