@@ -42,15 +42,29 @@ export const Login = ({history}) => {
         </ul>
       </nav>
       <div style={{display: 'flex', justifyContent: 'space-evenly'}}>
-        <div style={{display: 'block', padding: '10px', margin: '0'}}>
+        <div
+          style={{
+            display: 'block',
+            padding: '40px',
+            margin: '40px',
+            boxShadow: 'rgb(0 0 0 / 10%) 0 0 10px',
+            backgroundColor: 'white',
+          }}
+        >
           <form onSubmit={handleLogin} action="#">
             <h1>Logowanie</h1>
-            <label style={{fontWeight: '900'}} htmlFor="email">
+            <label
+              style={{fontWeight: '900', color: '#331e16'}}
+              htmlFor="email"
+            >
               Adres email
             </label>
             <input type="email" name="email" className="input-design" />
 
-            <label style={{fontWeight: '900'}} htmlFor="password">
+            <label
+              style={{fontWeight: '900', color: '#331e16'}}
+              htmlFor="password"
+            >
               Hasło
             </label>
             <input type="password" name="password" className="input-design" />

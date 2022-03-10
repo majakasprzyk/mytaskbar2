@@ -1,33 +1,3 @@
-.circle_1_init {
-  position: absolute;
-  top: 90%;
-  left: 76%;
-  height: 20%;
-  width: 26%;
-  background: #584133;
-  border-radius: 100px;
-}
-
-.circle_2_init {
-  position: absolute;
-  top: 79%;
-  left: 83%;
-  height: 26%;
-  width: 25%;
-  background: #584133;
-  border-radius: 100px;
-}
-
-.circle_3_init {
-  position: absolute;
-  top: 69%;
-  left: 93%;
-  height: 20%;
-  width: 13%;
-  background: #584133;
-  border-radius: 100px;
-}
-
 div.cover--square--horizontal {
   background-color: #584133;
   position: absolute;
@@ -103,6 +73,8 @@ div.introduction {
 .paragraph--introduction {
   color: #f3f2ed;
   margin: 0 29vw 0 29vw;
+  padding: 5px;
+  box-shadow: rgb(0 0 0 / 10%) 0 0 10px;
 }
 
 .link-nav {
@@ -135,7 +107,7 @@ div.square-container {
   border-color: #d9c2b3;
   padding: 21px;
   width: 268px;
-  margin-left: 28px;
+  margin: 10px;
   text-align: center;
   padding: 2.5%;
 }
