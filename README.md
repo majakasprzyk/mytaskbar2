@@ -21,4 +21,4 @@ HOME PAGE VIEW:
 LOG IN/REGISTER VIEW:
 <img width="100%" alt="Login" src="./src/assets/readmePhotos/login.jpg" />
 BOARDS VIEW:
-<img width="100%" alt="BarTable" src="./src/assets/readmePhotos/barTable.jpg" />
+<img width="100%" alt="BarTable" src="./src/assets/readmePhotos/bartable.jpg" />
