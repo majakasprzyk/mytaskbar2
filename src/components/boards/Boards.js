@@ -11,13 +11,14 @@ export const Boards = () => {
     localStorage.setItem(
       'tasks',
       JSON.stringify({
-        todo: [
-          {id: 1, text: 'odpocząć'},
-          {id: 5, text: 'podziękować kursantom ISA'},
-          {id: 6, text: 'podziękować prowadzącym ISA za współpracę'},
+        todo: [{id: 1, text: 'wypić kawę'}],
+        inProgress: [
+          {
+            id: 2,
+            text: 'rozważyć zaproszenie kandydatki Mai na rozmowę rektrutacyjną',
+          },
         ],
-        inProgress: [{id: 2, text: 'ukończyć kurs w ISA'}],
-        done: [{id: 3, text: 'zalogować się na stronę My Task Bar'}],
+        done: [{id: 3, text: 'zarejstrować się na stronie Task Bar'}],
       })
     );
   }

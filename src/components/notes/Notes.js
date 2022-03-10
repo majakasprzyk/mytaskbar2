@@ -16,6 +16,7 @@ export function Task({isDragging, task, onList}) {
     <div
       ref={dragRef}
       style={{
+        backgroundColor: 'white',
         opacity,
         border: '2px solid #d9c2b3',
         borderRadius: '3px',
