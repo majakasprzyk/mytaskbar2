@@ -13,8 +13,7 @@ form {
   border-bottom: 2px solid black;
   margin-bottom: 20px;
   width: 100%;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 15px;
 }
 
 input.submit {
@@ -45,6 +44,7 @@ input.submit:active {
 
 label {
   color: #331e16;
+  margin: 5px;
 }
 
 h1 {

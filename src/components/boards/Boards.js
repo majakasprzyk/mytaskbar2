@@ -1,4 +1,3 @@
-import {TableChanger} from '../tables/TableChanger';
 import './boards.css';
 import {Navigation} from '../navigation/Navigation';
 import {Task} from '../notes/Notes';
@@ -18,23 +17,12 @@ export const Boards = () => {
           {id: 6, text: 'podziękować prowadzącym ISA za współpracę'},
         ],
         inProgress: [{id: 2, text: 'ukończyć kurs w ISA'}],
-        done: [{id: 3, text: 'napisać test końcowy w ISA'}],
+        done: [{id: 3, text: 'zalogować się na stronę My Task Bar'}],
       })
     );
   }
 
   const [taskTitle, setTaskTitle] = useState('');
-
-  // const [columns, setColumns] = useState({
-  //   todo: [
-  //     {id: 1, text: 'ukończyć kurs w ISA'},
-  //     {id: 5, text: 'napisać test końcowy w ISA'},
-  //     {id: 6, text: 'podziękować prowadzącym ISA za współpracę'},
-  //   ],
-  //   inProgress: [{id: 2, text: 'odpocząć'}],
-  //   done: [{id: 3, text: 'podziękować kursantom ISA'}],
-  // });
-  // Napisałem to ponownie tym razem pobiera dane z local storage:
 
   const [columns, setColumns] = useState({
     todo: JSON.parse(localStorage.getItem('tasks')).todo,
@@ -82,7 +70,6 @@ export const Boards = () => {
   return (
     <>
       <Navigation />
-      <TableChanger />
       <DndProvider backend={HTML5Backend}>
         <div className="workBoards">
           <div className="toDo board">
