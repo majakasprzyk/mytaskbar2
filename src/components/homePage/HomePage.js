@@ -1,21 +1,10 @@
 import '../homePage/homepage.css';
-import {NavLink} from 'react-router-dom';
-import {Logo} from '../logo/Logo';
+import {HomeNavigation} from './HomeNavigation';
 
 export const HomePage = () => {
   return (
     <div>
-      <nav className="navigation_homepage">
-        <Logo />
-        <ul className="menu-nav">
-          <NavLink className="link-nav" to={'/login'}>
-            Zaloguj
-          </NavLink>
-          <NavLink className="link-register" to={'/signup'}>
-            Zarejestruj się
-          </NavLink>
-        </ul>
-      </nav>
+      <HomeNavigation />
       <div className="welcome">
         <h2 className="title">
           Witaj na stronie <span className="title-2"> My Task Bar!</span>{' '}
@@ -71,7 +60,6 @@ export const HomePage = () => {
             </p>
           </div>
         </div>
-        {/* <div className="footer_space--homepage"></div> */}
       </div>
     </div>
   );

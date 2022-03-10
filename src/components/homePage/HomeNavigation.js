@@ -1,5 +1,6 @@
 import {NavLink} from 'react-router-dom';
-import {Logo} from '../../logo/Logo';
+import {Logo} from '../logo/Logo';
+import '../homePage/homepage.css';
 
 export const HomeNavigation = () => {
   return (
