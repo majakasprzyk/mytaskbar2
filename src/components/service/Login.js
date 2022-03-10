@@ -52,7 +52,7 @@ export const Login = ({history}) => {
           }}
         >
           <form onSubmit={handleLogin} action="#">
-            <h1>Logowanie</h1>
+            <h1 style={{fontFamily: 'Lobster'}}>Logowanie</h1>
             <label
               style={{fontWeight: '900', color: '#331e16'}}
               htmlFor="email"

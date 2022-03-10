@@ -42,7 +42,7 @@ function Signup({history}) {
           }}
         >
           <form onSubmit={handleSignUp} action="#">
-            <h1>Rejestracja</h1>
+            <h1 style={{fontFamily: 'Lobster'}}>Rejestracja</h1>
             <label
               style={{fontWeight: '900', color: '#331e16'}}
               htmlFor="email"
