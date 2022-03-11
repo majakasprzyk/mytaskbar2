@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "./static/css/main.c0c020ab.chunk.css",
-    "main.js": "./static/js/main.dc479dd5.chunk.js",
-    "main.js.map": "./static/js/main.dc479dd5.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.aa1ded95.js",
-    "runtime-main.js.map": "./static/js/runtime-main.aa1ded95.js.map",
-    "static/js/2.a7d1be47.chunk.js": "./static/js/2.a7d1be47.chunk.js",
-    "static/js/2.a7d1be47.chunk.js.map": "./static/js/2.a7d1be47.chunk.js.map",
-    "index.html": "./index.html",
-    "static/css/main.c0c020ab.chunk.css.map": "./static/css/main.c0c020ab.chunk.css.map",
-    "static/js/2.a7d1be47.chunk.js.LICENSE.txt": "./static/js/2.a7d1be47.chunk.js.LICENSE.txt",
-    "static/media/loginAndRegister.css": "./static/media/backgroundScreen.440f4a43.png"
+    "main.css": "/mytaskbar2/static/css/main.ec3e3fca.chunk.css",
+    "main.js": "/mytaskbar2/static/js/main.b1fe92c0.chunk.js",
+    "main.js.map": "/mytaskbar2/static/js/main.b1fe92c0.chunk.js.map",
+    "runtime-main.js": "/mytaskbar2/static/js/runtime-main.a1dbad24.js",
+    "runtime-main.js.map": "/mytaskbar2/static/js/runtime-main.a1dbad24.js.map",
+    "static/js/2.edb48db6.chunk.js": "/mytaskbar2/static/js/2.edb48db6.chunk.js",
+    "static/js/2.edb48db6.chunk.js.map": "/mytaskbar2/static/js/2.edb48db6.chunk.js.map",
+    "index.html": "/mytaskbar2/index.html",
+    "static/css/main.ec3e3fca.chunk.css.map": "/mytaskbar2/static/css/main.ec3e3fca.chunk.css.map",
+    "static/js/2.edb48db6.chunk.js.LICENSE.txt": "/mytaskbar2/static/js/2.edb48db6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa1ded95.js",
-    "static/js/2.a7d1be47.chunk.js",
-    "static/css/main.c0c020ab.chunk.css",
-    "static/js/main.dc479dd5.chunk.js"
+    "static/js/runtime-main.a1dbad24.js",
+    "static/js/2.edb48db6.chunk.js",
+    "static/css/main.ec3e3fca.chunk.css",
+    "static/js/main.b1fe92c0.chunk.js"
   ]
 }
